@@ -1,60 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Engrav | EBC Website</title>
+    <title>Engrav | EBC Week</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
-    <style>
-        * {
-          box-sizing: border-box;
-        }
-        .column1 {
-          float: left;
-          width: 33.33%;
-          padding: 15px;
-        }
-        .column2 {
-          float: left;
-          width: 66.66%;
-          padding: 15px;
-        }
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        </style>
-    </head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+</style>
+</head> 
 <body>
-    <ul id="ul_navbar">
-        <li class="li_navbar"><a class="active" href="index.html">Home</a></li>
-        <li class="li_navbar"><a href="overview.html">Overview</a></li>
-        <li class="li_navbar"><a href="gallery.html">Contact</a></li>
-    </ul>
-         
 <div class="header">
-    <h1>2019/2020 EBC Week</h1>
+  <h1>EBC Week 2020</h1>
 </div>
-  
-  <div class="row">
-    <div class="column2">
-      <img id="congress" src="images/washington-dc.webp" alt="Congress Building" height="100%" width="100%">
-    </div>
-    
-    <div class="column1">
-      <h2>What is EBC Week?</h2>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="overview.html">Trip Overview</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><span class="under">What is EBC Week?</span></h2>
+      <img class="img" src="images/eastside_prep.jpg ">
       <p>At my school (Eastside Preparatory School or EPS) we have this week of school called EBC week. EBC stands for education beyond the classroom. We have both EBC days and EBC week. EBC days are just field trips where my class goes out into the community to learn from experiences rather than simply reading out of a textbook. EBC week is where every EPS student gets to pick a trip that they will go on for a week. The fifth, sixth, and seventh graders don't get to pick a trip, the trip is already picked for them. The highschoolers get to pick from a long list of trips from places in the country to other continents. The eighth-graders get to pick from a list of three trips. This year those trip options were:</p>
-    
-    <ul> 
-        <li>Washington DC</li>
+      <ul style="color: darkblue;">
         <li>Santa Fe</li>
-        <li>Yellowstone</li>
-    </ul> 
+        <li>Yellowstone</li> 
+        <li>Washington DC</li>
+    </ul>
+    <p>and the trip that I got was Washington DC.</p>
+    </div>
+    <div class="card">
+      <h2><span class="under">Why Washington DC?</span></h2>
+      <img class="img" src="images/why_washington_dc.jpg">
+      <p>Now you might be wondering why I want to go to Washington DC. There are two main reasons. First of all, I am incredibly interested in politics. I think it is essential for young people to understand how our country works. If we are to succeed I think that all people need to have, at the very minimum, a basic understanding of how to country is run. The second, and honestly the main, reason that I am going is that the trip that was my top pick was full so I ended up on my second choice. I wanted to go to Yellowstone but that trip could only hold 14 students so I ended up on this trip instead (not that I'm disappointed).</p>
     </div>
   </div>
-    
+  <div class="rightcolumn">
+    <div class="card">
+      <h2><span class="under">About this Website:</span></h2>
+      <p>At EPS we can choose our electives but some classes are required. One of these required classes is Web design or WEB. One of our projects is to make a website about our EBC week trip. On this site, you will find some information about EBC Week, a gallery of images of Washington DC, and an overview of what I will be doing in the Capital.</p>
+    </div>
+    <div class="card">
+      <h3><u>Some Places I Might go:</u></h3>
+      <img class="img" src="images/graveyard.jpg">
+      <img class="img" src="images/washington_monument.jpg">
+      <img class="img" src="images/smith_dc.jpg">
+    </div>
+    <div class="card">
+        <button onclick="showSources()" class="button">Show Sources</button>
+        <div id="sources" hidden="true">
+            <h2><span class="under">Sources:</span></h2>
+            <ol>
+                <li><a href="https://d32dsh9a6dg9hg.cloudfront.net/wp-content/uploads/sites/2/2016/11/09110716/overview.jpg" target="_blank">Smithsonian</a></li>
+                <li><a href="https://snyderfamilyhistory.files.wordpress.com/2013/05/2011-4-3-pentagon-arlington-tgr_118e.jpg" target="_blank">Arlington National Cemetery</a></li>
+                <li><a href="http://ssfengineers.com/wp-content/uploads/2017/02/Eastside-Prep-Public-47-Architects-compressor.jpg" target="
+                _blank">Eastside Prep</a></li>
+                <li><a href="https://i.pinimg.com/originals/3c/dd/ff/3cddff8b2f4cc1bcabcfe520990cf859.jpg" target="_blank">Capital Building</a></li>
+                <li><a href="https://cropper.watch.aetnd.com/cdn.watch.aetnd.com/sites/2/2018/05/HITH-5-things-you-might-not-know-about-the-washington-monument.jpg" target="_blank">Washington Monument</a></li>
+            </ol>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+   alert('Welcome to my Website!\nThis is a project for my web design class so I hope you enjoy it!')
+</script>
 </body>
 </html>
